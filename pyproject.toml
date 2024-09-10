@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "statistical-rethinking"
+version = "0.1.0"
+description = ""
+authors = ["TIbor Cus <tibor.cus@itsv.at>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = {version = "^2.4.1+cpu", source = "pytorch_cpu"}
+torchvision = {version = "^0.19.1+cpu", source = "pytorch_cpu"}
+pyro-ppl = "^1.9.1"
+seaborn = "^0.13.2"
+jupyter = "^1.1.1"
+
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
